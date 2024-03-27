@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Acklann.Plaid.PlaidClient" Collapsed="true">
+    <Position X="39" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AkEBQAgAA8AIAAAAAAIBABAAgEgCIAACAIAAAAAQAMA=</HashCode>
+      <FileName>PlaidClient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.RequestBase" Collapsed="true">
+    <Position X="17.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAEAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>RequestBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.ResponseBase" Collapsed="true">
+    <Position X="18.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAUAAAAAAAAAAAAAAAAAIABACAAAAAA=</HashCode>
+      <FileName>ResponseBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.SerializableContent" Collapsed="true">
+    <Position X="18.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>SerializableContent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Auth.GetAccountInfoRequest" Collapsed="true">
+    <Position X="20.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Auth\GetAccountInfoRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Auth.GetAccountInfoResponse" Collapsed="true">
+    <Position X="32" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAEAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Auth\GetAccountInfoResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Balance.GetAccountRequest" Collapsed="true">
+    <Position X="7.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Balance\GetAccountRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Balance.GetAccountResponse" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Balance\GetAccountResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Balance.GetBalanceRequest" Collapsed="true">
+    <Position X="9.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Balance\GetBalanceRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Balance.GetBalanceResponse" Collapsed="true">
+    <Position X="11.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Balance\GetBalanceResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Category.GetCategoriesRequest" Collapsed="true">
+    <Position X="32" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Category\GetCategoriesRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Category.GetCategoriesResponse" Collapsed="true">
+    <Position X="23" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Category\GetCategoriesResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Entity.Account" Collapsed="true">
+    <Position X="39" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BBACAAAAAAAAAAAAgAgAAQQAAAAAAAAAAQCAAAAAAAA=</HashCode>
+      <FileName>Entity\Account.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Entity.Category" Collapsed="true">
+    <Position X="40.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Entity\Category.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Entity.Identity" Collapsed="true">
+    <Position X="39" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAgAAAACAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\Identity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Entity.Income" Collapsed="true">
+    <Position X="40.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAACAAAAAAAAAQAAAAAAAAAiAAAAQACA=</HashCode>
+      <FileName>Entity\Income.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Entity.Institution" Collapsed="true">
+    <Position X="42.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAQAAAAAAAAAAAAAAAAQAAAAEAAAACABAAAAEAgQ=</HashCode>
+      <FileName>Entity\Institution.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Entity.Item" Collapsed="true">
+    <Position X="44.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FAAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Entity\Item.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Entity.Transaction" Collapsed="true">
+    <Position X="44.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAIAAAAAAAAgAAA6IAAASAAAAAEAEBAUAAIAEAAAA=</HashCode>
+      <FileName>Entity\Transaction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Exceptions.PlaidException" Collapsed="true">
+    <Position X="40.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAgCAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\PlaidException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Identity.GetUserIdentityRequest" Collapsed="true">
+    <Position X="11.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Identity\GetUserIdentityRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Identity.GetUserIdentityResponse" Collapsed="true">
+    <Position X="14" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAAACAAEAAAAAAAAA=</HashCode>
+      <FileName>Identity\GetUserIdentityResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Income.GetIncomeRequest" Collapsed="true">
+    <Position X="18.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Income\GetIncomeRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Income.GetIncomeResponse" Collapsed="true">
+    <Position X="25.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Income\GetIncomeResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Institution.GetAllRequest" Collapsed="true">
+    <Position X="42.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAIABAAAA=</HashCode>
+      <FileName>Institution\GetAllRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Institution.GetOptions" Collapsed="true">
+    <Position X="44.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Institution\GetOptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Institution.GetRequest" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAQAAAAAAAAAAAAAIABAgAA=</HashCode>
+      <FileName>Institution\GetRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Institution.GetResponse" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Institution\GetResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Institution.SearchByIdRequest" Collapsed="true">
+    <Position X="29.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Institution\SearchByIdRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Institution.SearchByIdResponse" Collapsed="true">
+    <Position X="16.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Institution\SearchByIdResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Institution.SearchRequest" Collapsed="true">
+    <Position X="34.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAgAAAAAAABAAAQ=</HashCode>
+      <FileName>Institution\SearchRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Institution.SearchResponse" Collapsed="true">
+    <Position X="27.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Institution\SearchResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Management.DeleteItemRequest" Collapsed="true">
+    <Position X="25.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Management\DeleteItemRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Management.DeleteItemResponse" Collapsed="true">
+    <Position X="34.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Management\DeleteItemResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Management.ExchangeTokenRequest" Collapsed="true">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Management\ExchangeTokenRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Management.ExchangeTokenResponse" Collapsed="true">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Management\ExchangeTokenResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Management.GetItemRequest" Collapsed="true">
+    <Position X="14" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Management\GetItemRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Management.GetItemResponse" Collapsed="true">
+    <Position X="18.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Management\GetItemResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Management.PlaidLinkResponse" Collapsed="true">
+    <Position X="42.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAEAAAAAAAAAAAQAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Management\PlaidLinkResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Management.RotateAccessTokenRequest" Collapsed="true">
+    <Position X="23" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Management\RotateAccessTokenRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Management.RotateAccessTokenResponse" Collapsed="true">
+    <Position X="29.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Management\RotateAccessTokenResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Management.StripeTokenRequest" Collapsed="true">
+    <Position X="36.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAggAAAAAAEAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Management\StripeTokenRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Management.StripeTokenResponse" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Management\StripeTokenResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Management.UpdateAccessTokenVersionRequest" Collapsed="true">
+    <Position X="5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAgAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Management\UpdateAccessTokenVersionRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Management.UpdateAccessTokenVersionResponse" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Management\UpdateAccessTokenVersionResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Management.UpdateWebhookRequest" Collapsed="true">
+    <Position X="16.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Management\UpdateWebhookRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Management.UpdateWebhookResponse" Collapsed="true">
+    <Position X="20.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Management\UpdateWebhookResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Management.WebhookResponse" Collapsed="true">
+    <Position X="39" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAQAAgAAgAAAAAABAAAIAAQAAAAAAAAA=</HashCode>
+      <FileName>Management\WebhookResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Transactions.GetTransactionsRequest" Collapsed="true">
+    <Position X="27.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAEBAAAA=</HashCode>
+      <FileName>Transactions\GetTransactionsRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Transactions.GetTransactionsResponse" Collapsed="true">
+    <Position X="36.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Transactions\GetTransactionsResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="Acklann.Plaid.Auth.GetAccountInfoOptions" Collapsed="true">
+    <Position X="40.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Auth\GetAccountInfoRequest.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Acklann.Plaid.Entity.Balance" Collapsed="true">
+    <Position X="39" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAGAAQBAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Entity\Balance.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="Acklann.Plaid.Environment" Collapsed="true">
+    <Position X="42.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAEAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Environment.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Acklann.Plaid.Entity.AccountSubtype" Collapsed="true">
+    <Position X="39" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAgAAAAAAAAABAAAAIAAEAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Entity\AccountSubtype.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Acklann.Plaid.Entity.AccountType" Collapsed="true">
+    <Position X="40.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAgAAAAAAAAABAAAAIAAEAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Entity\AccountType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Acklann.Plaid.Entity.TransactionType" Collapsed="true">
+    <Position X="44.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAECAAAAAIAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Entity\TransactionType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
