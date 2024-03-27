@@ -1,6 +1,9 @@
-﻿using Acklann.Plaid.Demo.Middleware;
+﻿using Acklann.Plaid.Demo.DataLayer;
+using Acklann.Plaid.Demo.Middleware;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Newtonsoft.Json;
@@ -10,9 +13,21 @@ namespace Acklann.Plaid.Demo
 {
     public class Startup
     {
+        public IConfiguration Configuration { get; }
+
+        public Startup(IConfiguration configuration)
+        {
+            Configuration = configuration;
+        }
+
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().AddNewtonsoftJson();
+
+            services.AddDbContext<DBContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("SQLConnection")));
+
+            services.AddScoped<ITokenService, TokenService>();
 
             services.AddSingleton<PlaidCredentials>();
         }
