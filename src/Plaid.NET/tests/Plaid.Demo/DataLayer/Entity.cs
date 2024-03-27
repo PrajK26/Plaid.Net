@@ -12,13 +12,12 @@ namespace Acklann.Plaid.Demo.DataLayer
         [Required]
         public string RequestId { get; set; }
 
-        [Required]
         public string ItemId { get; set; }
 
         public string AccessToken { get; set; }
 
         [Required]
-        public HttpStatusCode StatusCode { get; set; }
+        public string StatusCode { get; set; }
 
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     }

@@ -37,7 +37,7 @@ namespace Acklann.Plaid.Demo.Controllers
                 ItemId = result.ItemId,
                 RequestId = result.RequestId,
                 AccessToken = result.AccessToken,
-                StatusCode = result.StatusCode
+                StatusCode = result.StatusCode.ToString()
             };
 
             await _tokenService.SaveExchangeTokenResponseIfNotExistsAsync(entity);
