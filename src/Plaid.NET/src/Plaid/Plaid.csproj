@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard1.1</TargetFramework>
+    <AssemblyName>Acklann.Plaid</AssemblyName>
+    <RootNamespace>Acklann.Plaid</RootNamespace>
+    <AssemblyVersion>1.0.0.4</AssemblyVersion>
+    <PackageVersion>1.0.0.4</PackageVersion>
+    <Authors>Ackara</Authors>
+    <Company>Ackara</Company>
+    <PackageTags>plaid banking rest api</PackageTags>
+    <Copyright>All rights reserved</Copyright>
+    <PackageProjectUrl>https://github.com/SellerCloudTeam/plaid-net</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/Ackara/Plaid.NET/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <RepositoryUrl>https://github.com/SellerCloudTeam/plaid-net.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <Description>This is a .NET standard port of the [plaid](https://plaid.com/) banking API.</Description>
+    <PackageIconUrl>https://github.com/Ackara/Plaid.NET/raw/master/art/icon.png</PackageIconUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>SellerCloud.Acklann.Plaid</PackageId>
+    <Version>1.0.0.4</Version>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netstandard2.0\Acklann.Plaid.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+</Project>
