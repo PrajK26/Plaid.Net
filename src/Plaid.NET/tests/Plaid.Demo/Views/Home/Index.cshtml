@@ -75,13 +75,14 @@
                 return (!text || text.length === 0);
             }
 
-            self.showPlaidLink = function () {
+            self.showPlaidLink = async function () {
                 var handler = Plaid.create({
-                    clientName: 'Plaid Walkthrough Demo',
-                    env: self.environment().toLowerCase(),
-                    key: self.publicKey(),
-                    product: self.products(),
-                    webhook: 'https://requestb.in',/* Optional, use webhooks to get transaction and error updates */
+                    token: "link-sandbox-2badc492-5cbb-4e4c-a023-65f70251c99f",
+                    // clientName: 'Plaid Walkthrough Demo',
+                    // env: self.environment().toLowerCase(),
+                    // key: self.publicKey(),
+                    // product: self.products(),
+                    // webhook: 'https://requestb.in',/* Optional, use webhooks to get transaction and error updates */
                     onLoad: function () {
                         // Optional, called when Link loads
                     },
