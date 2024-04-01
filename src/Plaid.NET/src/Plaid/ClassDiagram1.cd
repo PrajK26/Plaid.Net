@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Acklann.Plaid.Entity.Account">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BBACAAAAAAAAAAAAgAgAAQQAAAAAAAAAAQCAAAAAAAA=</HashCode>
+      <FileName>Entity\Account.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Balance" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Acklann.Plaid.Entity.Category">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Entity\Category.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Entity.Identity">
+    <Position X="4" Y="0.5" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Struct Name="Acklann.Plaid.Entity.Identity.Phone">
+        <TypeIdentifier>
+          <NewMemberFileName>Entity\Identity.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="Acklann.Plaid.Entity.Identity.Email">
+        <TypeIdentifier>
+          <NewMemberFileName>Entity\Identity.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="Acklann.Plaid.Entity.Identity.Address">
+        <NestedTypes>
+          <Struct Name="Acklann.Plaid.Entity.Identity.Address.Data" Collapsed="true">
+            <TypeIdentifier>
+              <NewMemberFileName>Entity\Identity.cs</NewMemberFileName>
+            </TypeIdentifier>
+          </Struct>
+        </NestedTypes>
+        <TypeIdentifier>
+          <NewMemberFileName>Entity\Identity.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AABAgAAAACAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\Identity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Entity.Income">
+    <Position X="6" Y="0.5" Width="3" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Struct Name="Acklann.Plaid.Entity.Income.Stream">
+        <TypeIdentifier>
+          <NewMemberFileName>Entity\Income.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAACAAAAAAAAAQAAAAAAAAAiAAAAQACA=</HashCode>
+      <FileName>Entity\Income.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Entity.Institution">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Struct Name="Acklann.Plaid.Entity.Institution.Credential">
+        <TypeIdentifier>
+          <NewMemberFileName>Entity\Institution.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAACAQAAAAAAAAAAAAAAAAQAAAAEAAAACABAAAAEAgQ=</HashCode>
+      <FileName>Entity\Institution.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Entity.Item">
+    <Position X="13.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FAAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Entity\Item.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Acklann.Plaid.Entity.Transaction">
+    <Position X="11" Y="0.5" Width="2" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Struct Name="Acklann.Plaid.Entity.Transaction.LocationInfo" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Entity\Transaction.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="Acklann.Plaid.Entity.Transaction.PaymentInfo" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Entity\Transaction.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAEAIAAAAAAAAgAAA6IAAASAAAAAEAEBAUAAIAEAAAA=</HashCode>
+      <FileName>Entity\Transaction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="Acklann.Plaid.Entity.Balance">
+    <Position X="0.5" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAGAAQBAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Entity\Balance.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="Acklann.Plaid.Entity.AccountSubtype">
+    <Position X="2.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAgAAAAAAAAABAAAAIAAEAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Entity\AccountSubtype.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Acklann.Plaid.Entity.AccountType">
+    <Position X="0.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAgAAAAAAAAABAAAAIAAEAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Entity\AccountType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Acklann.Plaid.Entity.TransactionType">
+    <Position X="13.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAECAAAAAIAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Entity\TransactionType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
