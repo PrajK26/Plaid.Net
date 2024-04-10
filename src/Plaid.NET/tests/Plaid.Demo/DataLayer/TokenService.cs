@@ -13,22 +13,27 @@ namespace Acklann.Plaid.Demo.DataLayer
             _dbContext = dbContext;
         }
 
-        public async Task<bool> SaveExchangeTokenResponseIfNotExistsAsync(Entity entity)
+        public async Task<Entity> GetItemAsync(string institutionId)
         {
             var existingRecord = await _dbContext.ExchangeTokenResponse
                 .FirstOrDefaultAsync(e =>
-                    e.ItemId == entity.ItemId &&
-                    e.AccessToken == entity.AccessToken &&
-                    e.StatusCode == entity.StatusCode);
+                    e.InstitutionId == institutionId);
 
-            if (existingRecord == null)
+            return existingRecord;
+        }
+
+        public async Task<bool> SaveTokenAsync(Entity entity)
+        {
+            try
             {
                 _dbContext.ExchangeTokenResponse.Add(entity);
                 await _dbContext.SaveChangesAsync();
                 return true;
             }
-
-            return false;
+            catch
+            {
+                return false;
+            }
         }
     }
 }

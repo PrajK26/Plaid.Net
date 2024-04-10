@@ -5,6 +5,8 @@ namespace Acklann.Plaid.Demo.DataLayer
 {
     public interface ITokenService
     {
-        Task<bool> SaveExchangeTokenResponseIfNotExistsAsync(Entity entity);
+        Task<Entity> GetItemAsync(string institutionId);
+
+        Task<bool> SaveTokenAsync(Entity entity);
     }
 }

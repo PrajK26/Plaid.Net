@@ -24,26 +24,44 @@ namespace Acklann.Plaid.Demo.Controllers
         [HttpPost]
         public async Task<IActionResult> GetAccessToken(Environment environment, [FromBody]PlaidLinkResponse metadata)
         {
+            ExchangeTokenResponse result;
             var client = new PlaidClient(environment);
-            ExchangeTokenResponse result = client.ExchangeTokenAsync(new ExchangeTokenRequest()
+            var item = await _tokenService.GetItemAsync(metadata.Institution.Id);
+
+            if (item == null)
             {
-                Secret = _credentials.Secret,
-                ClientId = _credentials.ClientId,
-                PublicToken = metadata.PublicToken
-            }).Result;
+                result = client.ExchangeTokenAsync(new ExchangeTokenRequest()
+                {
+                    Secret = _credentials.Secret,
+                    ClientId = _credentials.ClientId,
+                    PublicToken = metadata.PublicToken
+                }).Result;
 
-            var entity = new DataLayer.Entity
+                if (result.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    var entity = new DataLayer.Entity
+                    {
+                        ItemId = result.ItemId,
+                        RequestId = result.RequestId,
+                        InstitutionId = metadata.Institution.Id,
+                        AccessToken = result.AccessToken
+                    };
+
+                    await _tokenService.SaveTokenAsync(entity);
+                }
+
+                _credentials.AccessToken = result.AccessToken;
+                System.Diagnostics.Debug.WriteLine($"access_token: '{result.AccessToken}'");
+            }
+            else
             {
-                ItemId = result.ItemId,
-                RequestId = result.RequestId,
-                AccessToken = result.AccessToken,
-                StatusCode = result.StatusCode.ToString()
-            };
-
-            await _tokenService.SaveExchangeTokenResponseIfNotExistsAsync(entity);
-
-            _credentials.AccessToken = result.AccessToken;
-            System.Diagnostics.Debug.WriteLine($"access_token: '{result.AccessToken}'");
+                result = new ExchangeTokenResponse
+                {
+                    ItemId = item.ItemId,
+                    RequestId = item.RequestId,
+                    AccessToken = item.AccessToken
+                };
+            }
 
             return Ok(result);
         }

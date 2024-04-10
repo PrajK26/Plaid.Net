@@ -14,10 +14,9 @@ namespace Acklann.Plaid.Demo.DataLayer
 
         public string ItemId { get; set; }
 
-        public string AccessToken { get; set; }
+        public string InstitutionId { get; set; }
 
-        [Required]
-        public string StatusCode { get; set; }
+        public string AccessToken { get; set; }
 
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     }
